@@ -1,0 +1,26 @@
+[
+  {
+    "input": "What is Python?",
+    "response": "Python is a high-level, interpreted programming language known for its simplicity and readability."
+  },
+  {
+    "input": "How do I install Python?",
+    "response": "You can download Python from the official website (python.org) and follow the installation instructions for your operating system."
+  },
+  {
+    "input": "What are the benefits of using Python?",
+    "response": "Python offers many benefits, including ease of learning, extensive libraries, cross-platform compatibility, and versatility in various domains such as web development, data science, and artificial intelligence."
+  },
+  {
+    "input": "Discipline",
+    "response": "control gained by enforcing obedience or order"
+  },
+  {
+    "input": "disc",
+    "response": "a round flat plate coated with a magnetic substance on which data for a computer is stored."
+  },
+  {
+    "input": "What is a computer?",
+    "response": "A computer is an electronic device that can perform various tasks by executing instructions given to it in a program."
+  }
+]
