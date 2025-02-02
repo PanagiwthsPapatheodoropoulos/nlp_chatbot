@@ -118,24 +118,48 @@ class ChatbotGUI:
         self.input_frame = tk.Frame(self.main_frame, bg='#000000')
         self.input_frame.pack(fill=tk.X, pady=(20, 0))
 
-        # Style the input field like v0 Vercel's UI textbox
+        
         style = ttk.Style()
         style.theme_use('clam')
         style.configure('Custom.TEntry', 
                         fieldbackground='#1a1a1a', 
                         foreground='#ffffff', 
                         insertcolor='#ffffff',
-                        font=custom_font)
+                        font=custom_font,
+                        padding=10,
+                        borderwidth=0,
+                        relief='flat',
+                        bordercolor='#1a1a1a',
+                        focuscolor='#1a1a1a',
+                        lightcolor='#1a1a1a',
+                        darkcolor='#1a1a1a')
 
         self.user_input = ttk.Entry(
             self.input_frame,
             style='Custom.TEntry'
         )
+        
         self.user_input.pack(side=tk.LEFT, fill=tk.X, expand=True)
         self.user_input.bind("<Return>", self.send_message)
         self.user_input.insert(0, "Ask me a question")
         self.user_input.bind("<FocusIn>", self.clear_placeholder)
         self.user_input.bind("<FocusOut>", self.restore_placeholder)
+
+       
+        style.configure('Custom.TButton',
+                        background='#2D2D2D',
+                        foreground='#ffffff',
+                        font=custom_font,
+                        borderwidth=0,
+                        relief='flat',
+                        padding=10,
+                        focuscolor='#404040',
+                        focusthickness=0)
+
+        style.map('Custom.TButton',
+                  background=[('active', '#404040')],
+                  foreground=[('active', '#ffffff')])
+
 
         self.send_button = tk.Button(
             self.input_frame,
