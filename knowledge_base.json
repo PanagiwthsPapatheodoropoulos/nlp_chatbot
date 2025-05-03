@@ -22,5 +22,57 @@
   {
     "input": "What is a computer?",
     "response": "A computer is an electronic device that can perform various tasks by executing instructions given to it in a program."
+  },
+  {
+    "input": "Define knowledge",
+    "response": "Knowledge is the information, understanding, and skills acquired through experience or education."
+  },
+  {
+    "input": "What is education?",
+    "response": "Education is the process of receiving or giving systematic instruction, especially in a school or university."
+  },
+  {
+    "input": "What is science?",
+    "response": "Science is the systematic study of the structure and behavior of the physical and natural world through observation and experiment."
+  },
+  {
+    "input": "What is data science?",
+    "response": "Data science is the field of using statistical, mathematical, and computational methods to extract insights from data."
+  },
+  {
+    "input": "What is machine learning?",
+    "response": "Machine learning is a subset of AI that enables systems to learn and improve from experience without being explicitly programmed."
+  },
+  {
+    "input": "What is artificial intelligence?",
+    "response": "Artificial intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems."
+  },
+  {
+    "input": "What is HTML?",
+    "response": "HTML (HyperText Markup Language) is the standard language used to create and design web pages."
+  },
+  {
+    "input": "What is CSS?",
+    "response": "CSS (Cascading Style Sheets) is used to style and layout HTML elements on a web page."
+  },
+  {
+    "input": "What is JavaScript?",
+    "response": "JavaScript is a programming language used to make web pages interactive and dynamic."
+  },
+  {
+    "input": "What is software?",
+    "response": "Software is a set of instructions that tell a computer what to do. It includes applications and operating systems."
+  },
+  {
+    "input": "What is hardware?",
+    "response": "Hardware refers to the physical components of a computer system, such as the CPU, memory, and hard drive."
+  },
+  {
+    "input": "What is an operating system?",
+    "response": "An operating system is system software that manages computer hardware, software resources, and provides services for programs."
+  },
+  {
+    "input": "What is cloud computing?",
+    "response": "Cloud computing is the delivery of computing services like storage and processing power over the internet on demand."
   }
 ]
