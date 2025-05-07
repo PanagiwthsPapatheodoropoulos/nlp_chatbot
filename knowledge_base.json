@@ -74,5 +74,12 @@
   {
     "input": "What is cloud computing?",
     "response": "Cloud computing is the delivery of computing services like storage and processing power over the internet on demand."
+<<<<<<< HEAD
+=======
+  },
+  {
+    "input": "tell me what is a problem",
+    "response": "a matter or situation regarded as unwelcome or harmful and needing to be dealt with and overcome."
+>>>>>>> ed85eb6 (Fixed logic of yes/no response from the chatbot to be more realistic)
   }
 ]

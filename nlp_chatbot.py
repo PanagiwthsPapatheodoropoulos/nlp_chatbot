@@ -86,6 +86,7 @@ class ChatbotGUI:
         self.feedback_mode = False
         self.last_question = None
         self.waiting_for_better_response = False
+        self.asking_for_more_questions = False  # New flag to track state
         self.typing_after_id = None
         self.message_queue = []
         
@@ -196,6 +197,8 @@ class ChatbotGUI:
 
         if self.feedback_mode:
             self.handle_feedback(message)
+        elif self.asking_for_more_questions:  # Check if we're asking for more questions
+            self.handle_more_questions_response(message)
         else:
             self.process_user_message(message)
 
@@ -221,8 +224,10 @@ class ChatbotGUI:
         if "I'm not sure about that" in chatbot_response:
             self.last_question = message
             self.feedback_mode = True
+            self.asking_for_more_questions = False
             self.queue_message("Chatbot: Was this response helpful? (yes/no)")
         else:
+            self.asking_for_more_questions = True  # Set flag to indicate we're asking for more questions
             self.queue_message("Chatbot: Do you have any more questions?")
 
     def handle_feedback(self, feedback):
@@ -233,14 +238,44 @@ class ChatbotGUI:
         elif feedback.lower() == 'yes':
             self.feedback_mode = False
             self.waiting_for_better_response = False
+            self.asking_for_more_questions = True  # Now we're asking for more questions
             self.queue_message("Chatbot: Great! Do you have any more questions?")
         elif self.waiting_for_better_response:
             self.chatbot.learn(self.last_question, feedback)
             self.feedback_mode = False
             self.waiting_for_better_response = False
+            self.asking_for_more_questions = True  # Now we're asking for more questions
             self.queue_message("Chatbot: Thank you for teaching me! Do you have any more questions?")
         
         self.user_input.delete(0, tk.END)
+
+    def handle_more_questions_response(self, response):
+        self.display_message(f"You: {response}")
+        self.user_input.delete(0, tk.END)
+        
+        # Check for negative responses
+        if response.lower() in ['no', 'nope', 'not now', 'no more questions']:
+            # User doesn't have more questions
+            self.asking_for_more_questions = False
+            self.queue_message("Chatbot: I'm here whenever you need help. Have a great day!")
+        # Check for positive responses
+        elif response.lower() in ['yes', 'yeah', 'yep', 'sure', 'ok', 'okay']:
+            # User wants to ask more questions but hasn't asked yet
+            self.asking_for_more_questions = False
+            self.queue_message("Chatbot: Great! What would you like to know?")
+        else:
+            # Treat as a new question
+            self.asking_for_more_questions = False
+            chatbot_response = self.chatbot.get_response(response)
+            self.queue_message(f"Chatbot: {chatbot_response}")
+            
+            if "I'm not sure about that" in chatbot_response:
+                self.last_question = response
+                self.feedback_mode = True
+                self.queue_message("Chatbot: Was this response helpful? (yes/no)")
+            else:
+                self.asking_for_more_questions = True
+                self.queue_message("Chatbot: Do you have any more questions?")
 
     def display_message(self, message):
         self.chat_display.config(state=tk.NORMAL)
@@ -269,4 +304,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = ChatbotGUI(root)
     root.mainloop()
-
