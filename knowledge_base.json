@@ -74,12 +74,105 @@
   {
     "input": "What is cloud computing?",
     "response": "Cloud computing is the delivery of computing services like storage and processing power over the internet on demand."
-<<<<<<< HEAD
-=======
   },
   {
     "input": "tell me what is a problem",
     "response": "a matter or situation regarded as unwelcome or harmful and needing to be dealt with and overcome."
->>>>>>> ed85eb6 (Fixed logic of yes/no response from the chatbot to be more realistic)
+  },
+  {
+    "input": "What is a database?",
+    "response": "A database is an organized collection of structured information or data, typically stored electronically in a computer system."
+  },
+  {
+    "input": "What is SQL?",
+    "response": "SQL (Structured Query Language) is a standard programming language used to manage and manipulate relational databases."
+  },
+  {
+    "input": "What is a network?",
+    "response": "A network is a group of interconnected computers that can communicate and share resources with each other."
+  },
+  {
+    "input": "What is cybersecurity?",
+    "response": "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks."
+  },
+  {
+    "input": "What is a virus in computing?",
+    "response": "A virus is a type of malicious software that replicates itself by infecting other computer programs or files."
+  },
+  {
+    "input": "What is an algorithm?",
+    "response": "An algorithm is a step-by-step procedure or formula for solving a problem or accomplishing a task."
+  },
+  {
+    "input": "What is programming?",
+    "response": "Programming is the process of designing and building executable computer software to accomplish specific tasks."
+  },
+  {
+    "input": "What is debugging?",
+    "response": "Debugging is the process of identifying and removing errors or bugs from computer software or hardware."
+  },
+  {
+    "input": "What is version control?",
+    "response": "Version control is a system that records changes to files or sets of files over time so that you can recall specific versions later."
+  },
+  {
+    "input": "What is Git?",
+    "response": "Git is a distributed version control system used to track changes in source code during software development."
+  },
+  {
+    "input": "What is Agile methodology?",
+    "response": "Agile methodology is an iterative approach to software development that emphasizes flexibility, collaboration, and customer feedback."
+  },
+  {
+    "input": "What are APIs?",
+    "response": "APIs (Application Programming Interfaces) are sets of rules and protocols for building and interacting with software applications."
+  },
+  {
+    "input": "What is DevOps?",
+    "response": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to shorten the systems development life cycle."
+  },
+  {
+    "input": "What is a framework?",
+    "response": "A framework is a platform for developing software applications, providing a foundation on which developers can build programs."
+  },
+  {
+    "input": "What is a library in programming?",
+    "response": "A library is a collection of precompiled routines that a program can use to perform specific tasks."
+  },
+  {
+    "input": "What is open source software?",
+    "response": "Open source software is software with source code that anyone can inspect, modify, and enhance."
+  },
+  {
+    "input": "What is a compiler?",
+    "response": "A compiler is a program that translates code written in a high-level programming language into machine code."
+  },
+  {
+    "input": "What is an interpreter?",
+    "response": "An interpreter is a program that directly executes instructions written in a programming or scripting language without compiling them into machine code."
+  },
+  {
+    "input": "What is recursion?",
+    "response": "Recursion is a programming technique where a function calls itself in order to solve smaller instances of the same problem."
+  },
+  {
+    "input": "What are data structures?",
+    "response": "Data structures are ways of organizing and storing data in a computer so that it can be accessed and modified efficiently."
+  },
+  {
+    "input": "What is an array?",
+    "response": "An array is a data structure that contains a fixed-size sequence of elements of the same type."
+  },
+  {
+    "input": "What is an object in programming?",
+    "response": "An object is an instance of a class in object-oriented programming, encapsulating data and behavior related to that data."
+  },
+  {
+    "input": "What is inheritance in programming?",
+    "response": "Inheritance is an object-oriented programming concept where one class can inherit properties and methods from another class."
+  },
+  {
+    "input": "What are functions in programming?",
+    "response": "Functions are reusable blocks of code that perform specific tasks when called upon."
   }
 ]

@@ -20,3 +20,9 @@ This repository contains an NLP-based chatbot implementation that leverages mach
 - Natural Language Processing libraries
 - Machine Learning frameworks
 - JSON for data storage and retrieval
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+Copyright (c) 2025 Your Name. All rights reserved.
