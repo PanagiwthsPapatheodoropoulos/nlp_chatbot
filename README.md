@@ -25,4 +25,4 @@ This repository contains an NLP-based chatbot implementation that leverages mach
 
 This project is licensed under the [MIT License](LICENSE).
 
-Copyright (c) 2025 Your Name. All rights reserved.
+Copyright (c) 2025 Papatheodoropoulos Panagiotis. All rights reserved.
